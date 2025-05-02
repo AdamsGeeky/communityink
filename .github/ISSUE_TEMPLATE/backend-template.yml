@@ -1,0 +1,110 @@
+name: 🔧 Backend Component
+description: Contribute by building or improving a backend route/controller/model/middleware
+title: '[feat] Backend: <Feature Name>'
+labels: ['backend', 'good first issue', 'help wanted']
+assignees:
+  - AdamsGeeky
+body:
+  - type: textarea
+    attributes:
+      label: 🧠 Feature Overview
+      description: |
+        Describe what this backend feature does and how it connects to the app’s functionality.
+        Mention whether this is a new route, controller, or update to an existing one.
+      placeholder: |
+        This task involves creating a POST endpoint for creating a new comment on a post...
+        It interacts with the Supabase database and requires user authentication.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🔁 API Route & HTTP Method
+      description: |
+        Define the API endpoint and the HTTP method(s) used.
+        Example: `POST /api/comments` — creates a new comment.
+      placeholder: |
+        Example:
+        - Route: /api/posts/:id/comments
+        - Method: POST
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🧱 Expected Data Model / Schema
+      description: |
+        Briefly outline the database structure or the Supabase table this task interacts with.
+        This helps contributors know what fields and validations are expected.
+      value: |
+        Table: `comments`
+        - id: UUID
+        - post_id: UUID
+        - user_id: UUID
+        - content: Text
+        - created_at: Timestamp
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 📚 Learning Resources (Required Before Starting)
+      description: |
+        Links and documentation contributors should review before starting.
+        These ensure they are familiar with Express, Supabase, and best practices.
+      value: |
+        - [Node.js Crash Course](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
+        - [Express.js Docs](https://expressjs.com/)
+        - [Supabase JS Client](https://supabase.com/docs/guides/api)
+        - [REST API Design Tutorial](https://restfulapi.net/)
+        - [Intro to Middleware in Express](https://expressjs.com/en/guide/using-middleware.html)
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: ✅ Prerequisites
+      description: |
+        What the contributor should already be comfortable with before working on this.
+      value: |
+        - Ability to run a local Node.js + Express server
+        - Basic understanding of async/await and HTTP request/response cycle
+        - Familiarity with `.env` usage and API key management
+        - Knows how to test API endpoints using Postman or Thunder Client
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🧪 Suggested Test Cases
+      description: |
+        Outline how this feature should be tested.
+        Example: Valid input, invalid input, unauthorized request, etc.
+      value: |
+        - ✅ Should create a comment successfully when valid input is sent
+        - ❌ Should fail when the post ID is invalid
+        - ❌ Should reject if the user is not authenticated
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: 📁 Relevant File Paths
+      description: Suggest where to implement the logic (controller, model, route).
+      value: |
+        - `/src/controllers/comment.controller.js`
+        - `/src/routes/comment.routes.js`
+        - `/src/models/comment.model.js`
+        - `/src/middleware/auth.middleware.js`
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: 💡 Additional Notes
+      description: |
+        Mention things like environment variables, related components, or naming conventions.
+        Add any warnings or tips you think are helpful.
+      placeholder: Ensure you include try/catch for error handling. Follow the REST naming convention.
+    validations:
+      required: false

@@ -1,0 +1,77 @@
+name: 🚧 Frontend Component
+description: Contribute by building a frontend UI component using Next.js, ShadCN, and TailwindCSS
+title: '[feat] Component: <Component Name>'
+labels: ['frontend', 'good first issue', 'help wanted']
+assignees:
+  - AdamsGeeky
+body:
+  - type: textarea
+    attributes:
+      label: 📌 Component Overview
+      description: |
+        Describe the purpose and expected behavior of this frontend component.
+        Provide links to any design prototypes or references (Figma, Notion, etc.)
+        Helpful for understanding how this component fits into the app.
+      placeholder: |
+        This component is responsible for rendering...
+        It is located on the homepage/dashboard/profile page etc.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🧱 UI Elements & Interactions
+      description: |
+        List and describe the main UI elements this component will include.
+        Include animation, responsiveness, dark/light mode if applicable.
+      value: |
+        - ✅ Button: Triggers a new post submission
+        - ✅ Card: Displays each user’s post with metadata
+        - ✅ Modal: For adding/editing a post
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 📚 Learning Resources (Required Before Starting)
+      description: |
+        Links and tutorials that contributors can review to complete this task.
+        Add or update if you found new helpful material!
+      value: |
+        - [ShadCN UI Documentation](https://ui.shadcn.dev/docs/components)
+        - [Next.js App Router Docs](https://nextjs.org/docs/app/building-your-application/routing)
+        - [TailwindCSS Docs](https://tailwindcss.com/docs)
+        - [React Components Crash Course](https://www.youtube.com/watch?v=bMknfKXIFA8)
+        - [Props & State in React](https://react.dev/learn/passing-props-to-a-component)
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: ✅ Prerequisites
+      description: |
+        What should the contributor already understand before picking this task?
+        Use this to ensure beginner contributors are not overwhelmed.
+      value: |
+        - Basic understanding of React functional components
+        - Familiar with TailwindCSS utility classes
+        - Knows how to use `useState`, `useEffect`, and `props`
+        - Has installed Node.js and run a Next.js app locally
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 📷 Design References or Screenshots (Optional)
+      description: Add any Figma link, screenshot, or UI inspiration that describes how this should look.
+      placeholder: Paste image links or embed markdown here.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: 💡 Additional Notes
+      description: Any edge cases, dependencies, or file paths to keep in mind while building this.
+      placeholder: This component should be responsive and mobile-first. You may reuse components from /ui or /shared folders.
+    validations:
+      required: false
